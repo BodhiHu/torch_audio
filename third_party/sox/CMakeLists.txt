@@ -2,7 +2,8 @@ include(FetchContent)
 
 FetchContent_Declare(
   sox_src
-  URL https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
+  # URL https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
+  URL file://${CMAKE_SOURCE_DIR}/deps/sox-14.4.2.tar.bz2
   URL_HASH SHA256=81a6956d4330e75b5827316e44ae381e6f1e8928003c6aa45896da9041ea149c
   PATCH_COMMAND ""
   CONFIGURE_COMMAND ""

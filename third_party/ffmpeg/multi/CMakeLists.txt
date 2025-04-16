@@ -58,17 +58,20 @@ elseif (UNIX)
   if ("${CMAKE_SYSTEM_PROCESSOR}" STREQUAL "aarch64")
     FetchContent_Declare(
       f4
-      URL ${base_url}/2023-08-14/linux_aarch64/4.4.4.tar.gz
+      # URL ${base_url}/2023-08-14/linux_aarch64/4.4.4.tar.gz
+      URL file://${CMAKE_SOURCE_DIR}/deps/4.4.4.tar.gz
       URL_HASH SHA256=6f00437d13a3b3812ebe81c6e6f3a84a58f260d946a1995df87ba09aae234504
       )
     FetchContent_Declare(
       f5
-      URL ${base_url}/2023-07-06/linux_aarch64/5.0.3.tar.gz
+      # URL ${base_url}/2023-07-06/linux_aarch64/5.0.3.tar.gz
+      URL file://${CMAKE_SOURCE_DIR}/deps/5.0.3.tar.gz
       URL_HASH SHA256=65c663206982ee3f0ff88436d8869d191b46061e01e753518c77ecc13ea0236d
       )
     FetchContent_Declare(
       f6
-      URL ${base_url}/2023-07-06/linux_aarch64/6.0.tar.gz
+      # URL ${base_url}/2023-07-06/linux_aarch64/6.0.tar.gz
+      URL file://${CMAKE_SOURCE_DIR}/deps/6.0.tar.gz
       URL_HASH SHA256=ec762fd41ea7b8d9ad4f810f53fd78a565f2bc6f680afe56d555c80f3d35adef
       )
   elseif ("${CMAKE_SYSTEM_PROCESSOR}" STREQUAL "x86_64")
